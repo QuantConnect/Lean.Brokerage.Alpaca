@@ -132,6 +132,7 @@ public static class AlpacaBrokerageExtensions
     /// <exception cref="NotSupportedException">Thrown when the order type is not supported.</exception>
     private static AlpacaMarket.OrderBase CreateAlpacaBuyOrder(this Order order, string brokerageSymbol, AlpacaMarket.OrderQuantity quantity, OrderType orderType)
     {
+        var d = AlpacaMarket.AdvancedOrderBase
         switch (orderType)
         {
             case OrderType.Market:
