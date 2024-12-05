@@ -137,13 +137,14 @@ Alpaca supports cash and margin accounts.
 
 The following table describes the available order types for each asset class that our Alpaca integration supports.
 
-| Order Type  | Equity | Equity Options | Crypto
-| ----------- | ----------- | ----------- |
-| `MarketOrder` | Yes | Yes | Yes |
-| `LimitOrder` | Yes | Yes | Yes |
-| `StopMarketOrder` | Yes | Yes | No |
-| `StopLimitOrder` | Yes | Yes | Yes |
-| `TrailingStopOrder` | Yes | Yes | No |
+| Order Type / Security Type | Equity | Equity Options | Futures |
+|:--------------------------:|:------:|:--------------:|:-------:|
+|         MarketOrder        |   Yes  |       Yes      |   Yes   |
+|         LimitOrder         |   Yes  |       Yes      |   Yes   |
+|       StopMarketOrder      |   Yes  |       Yes      |   Yes   |
+|       StopLimitOrder       |   Yes  |       Yes      |   Yes   |
+|        MarketOnOpen        |   Yes  |       Yes      |   Yes   |
+|        MarketOnClose       |   Yes  |       Yes      |   Yes   |
 
 
 ## Downloading Data
